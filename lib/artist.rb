@@ -16,6 +16,7 @@
 #   #print_songs
 #     lists all of the artist's songs (FAILED - 9)
 
+require 'pry'
 
 class Artist
 
@@ -35,6 +36,7 @@ class Artist
 
   def add_song(song)        #  keeps track of an artist's songs
     song.artist = self
+    binding.pry
     #song.push(song)
   end
 
