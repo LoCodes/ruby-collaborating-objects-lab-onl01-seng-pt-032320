@@ -15,8 +15,8 @@
 
 
 class Song
-  attr_accessor :name     #name= - sets the song name
-  attr_reader :artist                                #artist= sets the artist object to belong to the song
+  attr_accessor :name, :artist     #name= - sets the song name
+                                #artist= sets the artist object to belong to the song
   @@all = []
 
   # #initialize with a name
@@ -24,6 +24,7 @@ class Song
 
   def initialize(name)
     @name = name
+    @artist = artist
     @@all << self
   end
 
