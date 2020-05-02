@@ -55,7 +55,7 @@ class Artist
      #the self within the class method refers to the class itself. its the same as saying
      #Artist.all.find.
 
-     
+
   end
   def self.create(name) #class method
     song = self.new(name)
