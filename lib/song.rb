@@ -38,7 +38,7 @@ class Song
   #  associates new song instance with the artist from the filename (FAILED - 9)
 
   def self.new_by_filename(filename)
-    artist, song = filename.chomp(".mp3").split(" - ")
+    song = filename.chomp(".mp3").split(" - ")
     new_song = self.new(song)
     new_song.artist = Artist.find_or_create_by_name(name)
     binding.pry
