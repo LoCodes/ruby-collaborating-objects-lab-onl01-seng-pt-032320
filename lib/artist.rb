@@ -36,7 +36,6 @@ class Artist
 
   def add_song(song)        #  keeps track of an artist's songs
     song.artist = self
-    binding.pry
     #song.push(song)
   end
 
