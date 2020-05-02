@@ -13,6 +13,7 @@
 #   #artist_name=
 #     accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute (FAILED - 17)
 
+require 'pry'
 
 class Song
   attr_accessor :name, :artist     #name= - sets the song name
